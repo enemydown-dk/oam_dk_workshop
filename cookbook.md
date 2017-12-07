@@ -31,3 +31,8 @@ på Windows (cmd) og indtaste disse kommandoer (copy and paste):
 * pip install jedi
 * pip install pylint
 
+<h2>SCRIPTS</h2>
+Herunder følger koden til de enkelte scripts vi bruger på workshoppen. Du skal ikke være fortrolig med tingene herunder.
+Det er inkluderet til den meget nysgerrige deltager og som et sted, hvor du efter workshoppen kan se tilbage på koden. Under de enkelte
+scripts er der linket direkte til nyeste version som kan hentes som køreklar Python kode.
+
