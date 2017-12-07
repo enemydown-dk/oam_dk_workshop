@@ -4,6 +4,7 @@ det software, du skal bruge på dagen.
 
 På dagen er der sat 30 minutter af til installfest. Her installerer og konfigurerer vi Python og Atom i fælleskab.
 Installfest er i tidsrummer 9:00 -> 9:30.
+**BEMÆRK!** Hvis du ikke er lokaladministrator på din maskine, skal du have installeret programmerne hjemmefra. Primærk fokus skal lægges på Python og Atom. Atom udvidelser kan drille, såfremt man ikke er lokaladministrator - disse kan derfor udelades.
 
 <h2>PYTHON</h2>
 For at kunne køre kode skrevet i Python, skal du have en såkaldt Python fortolker.
@@ -28,5 +29,4 @@ på Windows (cmd) og indtaste disse kommandoer (copy and paste):
 * apm install linter-pylint
 * pip install jedi
 * pip install pylint
-
 
