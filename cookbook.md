@@ -12,7 +12,7 @@ men huske at sætte flueben ved: **add python to path**.
 
 <h2>ATOM</h2>
 For at skrive python skal vi bruge en text editor, vi anbefaler at bruge Atom det er en
-gratis open source editor lavet af folkene bag GitHub. Atom kan hentes i sin nyeste version [her](https://atom.io/).
+gratis open source editor lavet af folkene bag GitHub. Atom kan hentes i sin nyeste version [her](https://atom.io).
 
 <h2>ATOM UDVIDELSER</h2>
 Atom har en række udvidelser der gør det nemmere at skrive i python, hvis du i
