@@ -5,14 +5,14 @@ det software vi skal bruge på dagen.
 <h2>PYTHON</h2>
 For at kunne køre kode skrevet i python, skal man have en såkaldt python fortolker.
 Du skal installere den nyeste version af python, som er version 3.6.3. Den kan hentes via
-dette [link](https://www.python.org/downloads/). Det er vigtigt at i kører nyeste version,
+dette [link](http://www.python.org/downloads/). Det er vigtigt at i kører nyeste version,
 da scripts er opdateret til denne udgave.
 Følg den installations guide, der kommer med programmet. Du skal lave en standard installation,
 men huske at sætte flueben ved: **add python to path**.
 
 <h2>ATOM</h2>
 For at skrive python skal vi bruge en text editor, vi anbefaler at bruge Atom det er en
-gratis open source editor lavet af folkene bag GitHub. Atom kan hentes i sin nyeste version [her](https://atom.io/) .
+gratis open source editor lavet af folkene bag GitHub. Atom kan hentes i sin nyeste version [her](http://atom.io/).
 
 <h2>ATOM UDVIDELSER</h2>
 Atom har en række udvidelser der gør det nemmere at skrive i python, hvis du i
