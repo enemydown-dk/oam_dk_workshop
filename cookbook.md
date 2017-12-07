@@ -2,7 +2,7 @@ Til workshoppen den 23. januar 2018, skal vi arbejde med programmeringssproget p
 For at vi kan komme godt fra start på dagen bedes i læse den guide igennem og installere
 det software vi skal bruge på dagen.
 
-<h2>Python
+<h2>Python<h2>
 For at kunne køre kode skrevet i python, skal man have en såkaldt python fortolker.
 Du skal installere den nyeste version af python, som er version 3.6.3. Den kan hentes via
 dette [link](https://www.python.org/downloads/). Det er vigtigt at i kører nyeste version,
