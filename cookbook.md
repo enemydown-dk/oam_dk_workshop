@@ -41,7 +41,6 @@ scripts er der linket direkte til nyeste version som kan hentes som køreklar Py
 Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
 
 
-
 **Kode:**
 ```
 #!/usr/bin/env python3
@@ -80,7 +79,6 @@ for entry in entries:
     oa = entry["OA"]
 print("{}\t{}\t{}".format(doi, title, oa))
 ```
-
 
 **Anvendelse:**
 
