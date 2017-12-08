@@ -38,6 +38,7 @@ scripts er der linket direkte til nyeste version som kan hentes som køreklar Py
 
 <h3>oaDOI.py</h3>
 ```
+
 import urllib.request, urllib.error, json, csv, os
 
 url = 'https://api.oadoi.org/'
@@ -72,6 +73,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 ```
 
 <h3>bibtex2csv.py</h3>
