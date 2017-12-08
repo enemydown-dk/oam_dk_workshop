@@ -36,6 +36,43 @@ Herunder følger koden til de enkelte scripts vi bruger på workshoppen. Du skal
 Det er inkluderet til den meget nysgerrige deltager og som et sted, hvor du efter workshoppen kan se tilbage på koden. Under de enkelte
 scripts er der linket direkte til nyeste version som kan hentes som køreklar Python kode.
 
+<h3>oaDOI.py</h3>
+```
+import urllib.request, urllib.error, json, csv, os
+
+url = 'https://api.oadoi.org/'
+mail = 'lajh@kb.dk'
+file_name = 'lookup.csv'
+json_name = 'json.js'
+
+def pullDataAPI(url):
+    req = urllib.request.Request(url)
+    try:
+       response = urllib.request.urlopen(req)
+       data = json.loads(response.read())
+       writeJson2CSV(json_name, data)
+       print(data)
+
+    except urllib.error.HTTPError as e:
+        print(e.reason)
+
+def openCSV():
+    with open(file_name, newline='') as f:
+        reader = csv.reader(f, delimiter=';')
+        next(f)
+        for row in reader:
+            pullDataAPI(url + row[0] + '?email=' + mail)
+
+def writeJson2CSV(json_name, data):
+    with open (json_name, mode="a") as file:
+        file.write(json.dumps(data))
+
+def main():
+    openCSV()
+
+if __name__ == '__main__':
+    main()
+```
 
 <h3>bibtex2csv.py</h3>
 Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
