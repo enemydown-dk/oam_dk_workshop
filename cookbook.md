@@ -66,7 +66,6 @@ for line in stdin:
             entries.append(entry)
             entry = {}
     elif match('url', line.strip()):
-        #value, = findall('\{(\S+)\}', line)
         value, = findall("\\s+", line)
         entry["url"] = value
     elif search('=', line.strip()):
