@@ -37,7 +37,7 @@ Det er inkluderet til den meget nysgerrige deltager og som et sted, hvor du efte
 scripts er der linket direkte til nyeste version som kan hentes som køreklar Python kode.
 
 <h3>oaDOI.py</h3>
-```
+```python
 
 import urllib.request, urllib.error, json, csv, os
 
@@ -81,7 +81,7 @@ Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of 
 
 
 **Kode:**
-```
+```python
 #!/usr/bin/env python3
 
 """
