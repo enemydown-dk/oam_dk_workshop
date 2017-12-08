@@ -79,7 +79,6 @@ for entry in entries:
 print("{}\t{}\t{}".format(doi, title, oa))
 ```
 **Anvendelse:**
-
 Howto convert & add fields to extract: Convert single BibTex file (.bib) with the command ./bibtex2csv.py < [.bib file] > [output file] Convert multiple BibTex files (.bib) with the command cat *.bib | ./bibtex2csv > [output file]
 
 Add extra fields to extract by adding fields to the below code in main program. for entry in entries: doi = entry["DOI"] title = entry["Title"] oa = entry["OA"] -> new_variable = entry["name_from_bibtex_file"]
