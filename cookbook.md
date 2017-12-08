@@ -38,43 +38,44 @@ scripts er der linket direkte til nyeste version som kan hentes som køreklar Py
 
 **bibtex2csv.py**
 Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
-```
+
 *kode:*
-  #!/usr/bin/env python3
+```
+#!/usr/bin/env python3
 
-  """
-  Python script that converts BibTeX
-  entries to CSV.
-  Input is via standard input.
-  Output is via standard output.
-  """
+"""
+Python script that converts BibTeX
+entries to CSV.
+Input is via standard input.
+Output is via standard output.
+"""
 
-  from re import match
-  from re import search
-  from re import findall
-  from sys import stdin
+from re import match
+from re import search
+from re import findall
+from sys import stdin
 
-  entries = []
-  entry = {}
+entries = []
+entry = {}
 
-  for line in stdin:
-      if match('^@', line.strip()):
-          if entry != {}:
-              entries.append(entry)
-              entry = {}
-      elif match('url', line.strip()):
-          #value, = findall('\{(\S+)\}', line)
-          value, = findall("\\s+", line)
-          entry["url"] = value
-      elif search('=', line.strip()):
-          key, value = [v.strip(" {},\n") for v in line.split("=", 1)]
-          entry[key] = value
+for line in stdin:
+    if match('^@', line.strip()):
+        if entry != {}:
+            entries.append(entry)
+            entry = {}
+    elif match('url', line.strip()):
+        #value, = findall('\{(\S+)\}', line)
+        value, = findall("\\s+", line)
+        entry["url"] = value
+    elif search('=', line.strip()):
+        key, value = [v.strip(" {},\n") for v in line.split("=", 1)]
+        entry[key] = value
 
-  for entry in entries:
-      doi = entry["DOI"]
-      title = entry["Title"]
-      oa = entry["OA"]
-  print("{}\t{}\t{}".format(doi, title, oa))
+for entry in entries:
+    doi = entry["DOI"]
+    title = entry["Title"]
+    oa = entry["OA"]
+print("{}\t{}\t{}".format(doi, title, oa))
 ```
 *anvendelse:*
 Howto convert & add fields to extract: Convert single BibTex file (.bib) with the command ./bibtex2csv.py < [.bib file] > [output file] Convert multiple BibTex files (.bib) with the command cat *.bib | ./bibtex2csv > [output file]
