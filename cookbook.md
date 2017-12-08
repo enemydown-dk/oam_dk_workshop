@@ -36,8 +36,10 @@ Herunder følger koden til de enkelte scripts vi bruger på workshoppen. Du skal
 Det er inkluderet til den meget nysgerrige deltager og som et sted, hvor du efter workshoppen kan se tilbage på koden. Under de enkelte
 scripts er der linket direkte til nyeste version som kan hentes som køreklar Python kode.
 
+
 **bibtex2csv.py**
 Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
+
 
 *kode:*
 ```
