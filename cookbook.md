@@ -41,6 +41,8 @@ Scriptet er udviklet med det formål, at udtrække OA metadata fra ressourcen ht
 
 **Kode:**
 ```python
+#!/usr/bin/env python3
+
 """OADOI lookup via DOI from .csv"""
 
 import urllib.request
