@@ -41,10 +41,10 @@ scripts er der linket direkte til nyeste version som kan hentes som køreklar Py
 
 import urllib.request, urllib.error, json, csv, os
 
-url = 'https://api.oadoi.org/'
-mail = 'lajh@kb.dk'
-file_name = 'lookup.csv'
-json_name = 'json.js'
+url = "https://api.oadoi.org/"
+mail = "lajh@kb.dk"
+file_name = "lookup.csv"
+json_name = "json.js"
 
 def pullDataAPI(url):
     req = urllib.request.Request(url)
@@ -58,11 +58,11 @@ def pullDataAPI(url):
         print(e.reason)
 
 def openCSV():
-    with open(file_name, newline='') as f:
-        reader = csv.reader(f, delimiter=';')
+    with open(file_name, newline="") as f:
+        reader = csv.reader(f, delimiter=";")
         next(f)
         for row in reader:
-            pullDataAPI(url + row[0] + '?email=' + mail)
+            pullDataAPI(url + row[0] + "?email=" + mail)
 
 def writeJson2CSV(json_name, data):
     with open (json_name, mode="a") as file:
@@ -71,7 +71,7 @@ def writeJson2CSV(json_name, data):
 def main():
     openCSV()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
 
 ```
