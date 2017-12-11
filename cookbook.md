@@ -175,12 +175,19 @@ for entry in ENTRIES:
 
 **Anvendelse og tilføjelse af ekstra felter:**
 
-* Konverter en enkelt BibTex fil (.bib) med kommandoen ./bibtex2csv.py < [.bib filnavn] > [output filnavn]
-* Konverter mange BibTex filer (.bib) samtidig med kommandoen cat \*.bib | ./bibtex2csv > [output file]
+* Konverter en enkelt BibTex fil (.bib) med kommandoen ./bibtex2csv.py < [.bib filnavn] > [output filnavn].
+* Konverter mange BibTex filer (.bib) samtidig med kommandoen cat \*.bib | ./bibtex2csv > [output filnavn] (ikke Windows).
 
+Tilføj ekstra felter som du vil have udtrukket fra Bibtex, ved at tilføje felter til programkoden i denne del:
+```python
+print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" \
+    .format(issn, doi, title, oa, affiliation, journal, publisher, funding, fundtext))
+```
+Bemærk! At såfremt du tilføjer eller fjerner et nyt felt i linjen: .format(issn, doi, title, oa, affiliation, journal, publisher, funding, fundtext)), skal du også tilføje samme antal \t{} til linjen: print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" + du skal tilføje en fejlhåndteringsblok eksempelvis:
 
-
-Add extra fields to extract by adding fields to the below code in main program. for entry in entries: doi = entry["DOI"] title = entry["Title"] oa = entry["OA"] -> new_variable = entry["name_from_bibtex_file"]
-
-Add \t{} to line for as many new fields as you add -> print("{}\t{}\t{}".format(doi, title, oa))
-
+```python
+try:
+        fundtext = entry["Funding-text"]
+    except KeyError:
+        fundtext = 'N/A'
+```
