@@ -187,7 +187,7 @@ Bemærk! At såfremt du tilføjer eller fjerner et nyt felt i linjen: .format(is
 
 ```python
 try:
-        fundtext = entry["Funding-text"]
-    except KeyError:
-        fundtext = 'N/A'
+    fundtext = entry["Funding-text"]
+except KeyError:
+    fundtext = 'N/A'
 ```
