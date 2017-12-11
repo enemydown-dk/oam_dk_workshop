@@ -46,7 +46,7 @@ Scriptet er udviklet med det formål, at udtrække OA metadata fra ressourcen ht
 """OADOI lookup via DOI from .csv"""
 
 import urllib.request
-import  urllib.error
+import urllib.error
 import json
 import csv
 
