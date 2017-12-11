@@ -175,8 +175,8 @@ for entry in ENTRIES:
 
 **Anvendelse og tilføjelse af ekstra felter:**
 
-Konverter en enkelt BibTex fil (.bib) med kommandoen ./bibtex2csv.py < [.bib filnavn] > [output filnavn]
-Konverter mange BibTex filer (.bib) samtidig med kommandoen cat \*.bib | ./bibtex2csv > [output file]
+* Konverter en enkelt BibTex fil (.bib) med kommandoen ./bibtex2csv.py < [.bib filnavn] > [output filnavn]
+* Konverter mange BibTex filer (.bib) samtidig med kommandoen cat \*.bib | ./bibtex2csv > [output file]
 
 
 
