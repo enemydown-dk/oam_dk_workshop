@@ -183,7 +183,7 @@ Tilføj ekstra felter som du vil have udtrukket fra Bibtex, ved at tilføje felt
 print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" \
     .format(issn, doi, title, oa, affiliation, journal, publisher, funding, fundtext))
 ```
-Bemærk! At såfremt du tilføjer eller fjerner et nyt felt i linjen: .format(issn, doi, title, oa, affiliation, journal, publisher, funding, fundtext)), skal du også tilføje samme antal \t{} til linjen: print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" + du skal tilføje en fejlhåndteringsblok eksempelvis:
+Bemærk! At såfremt du tilføjer eller fjerner et felt i linjen: .format(issn, doi, title, oa, affiliation, journal, publisher, funding, fundtext)), skal du også tilføje samme antal \t{} til linjen: print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" + du skal tilføje en fejlhåndteringsblok eksempelvis:
 
 ```python
 try:
