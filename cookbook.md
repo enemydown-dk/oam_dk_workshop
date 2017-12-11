@@ -90,6 +90,7 @@ if __name__ == '__main__':
 
 **Anvendelse:**
 Scriptet accepterer input i form af en kommasepareret tekstfil indeholdende den liste af DOI'er, som vi ønsker at udtrække informationer omkring. Der skal også defineres en output fil. Input og output defineres i scriptets linje 12 og 13. Mail skal defineres ift. eventuel misbrug (undgå blacklisting), dette defineres i linje 11.
+En videreudvikling med GUI (grafisk brugerinterface) kan hentes her: https://github.com/enemydown-dk/OaDoiMiner (dette er dog udenfor dette workshop, men kan inspirere til at arbejde videre).
 
 <h3>bibtex2csv.py</h3>
 Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
