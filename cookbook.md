@@ -92,7 +92,7 @@ if __name__ == '__main__':
 Scriptet accepterer input i form af en kommasepareret tekstfil indeholdende den liste af DOI'er, som vi ønsker at udtrække informationer omkring. Der skal også defineres en output fil. Input og output defineres i scriptets linje 12 og 13. Mail skal defineres ift. eventuel misbrug (undgå blacklisting), dette defineres i linje 11.
 En videreudvikling med GUI (grafisk brugerinterface) kan hentes her: https://github.com/enemydown-dk/OaDoiMiner (dette er udenfor dette workshop, men kan inspirere til at arbejde videre).
 
-***Kør scriptet med følgende kommando: python OADOI.py
+***Kør scriptet med følgende kommando: python OADOI.py***
 
 <h3>SciDOI.py</h3>
 Scriptet er udviklet med det formål, at udtrække OA data fra Science Direct med input i form af en kommasepareret DOI-liste.
@@ -148,7 +148,7 @@ if __name__ == '__main__':
 **Anvendelse:**
 Indsæt din API-kode fra Science Direct, og navngiv input og outputfilerne direkte i scriptet. Disse filer skal være tilstede i samme mappe som scriptet. Den ene fil in.txt (eller hvad du navngiver den til) skal indeholde din kommaseparerede DOI-liste, output.txt skal bare være en tom tekstfil. API-koden til Science Direct kan oprettes her: https://dev.elsevier.com/apikey/manage
 
-***Kør scriptet med følgende kommando: python SciDOI.py
+***Kør scriptet med følgende kommando: python SciDOI.py***
 
 <h3>bibtex2csv.py</h3>
 Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
