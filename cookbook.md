@@ -37,6 +37,8 @@ Det er inkluderet til den meget nysgerrige deltager og som et sted, hvor du efte
 scripts er der linket direkte til nyeste version som kan hentes som køreklar Python kode.
 
 <h3>oadoi.py</h3>
+***Download: https://github.com/enemydown-dk/oam_dk_workshop/blob/master/filer/oadoi.py***
+
 Scriptet er udviklet med det formål, at udtrække OA metadata fra ressourcen http://oadoi.org
 
 **Kode:**
@@ -95,6 +97,8 @@ En videreudvikling med GUI (grafisk brugerinterface) kan hentes her: https://git
 ***Kør scriptet med følgende kommando: python oadoi.py***
 
 <h3>scidoi.py</h3>
+***Download: https://github.com/enemydown-dk/oam_dk_workshop/blob/master/filer/scidoi.py***
+
 Scriptet er udviklet med det formål, at udtrække OA data fra Science Direct med input i form af en kommasepareret DOI-liste.
 
 **Kode:**
@@ -151,6 +155,8 @@ Indsæt din API-kode fra Science Direct, og navngiv input og outputfilerne direk
 ***Kør scriptet med følgende kommando: python scidoi.py***
 
 <h3>bibtex2csv.py</h3>
+****Download: https://github.com/enemydown-dk/oam_dk_workshop/blob/master/filer/bibtex2csv.py***
+
 Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
 
 **Kode:**
