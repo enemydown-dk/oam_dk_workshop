@@ -92,6 +92,59 @@ if __name__ == '__main__':
 Scriptet accepterer input i form af en kommasepareret tekstfil indeholdende den liste af DOI'er, som vi ønsker at udtrække informationer omkring. Der skal også defineres en output fil. Input og output defineres i scriptets linje 12 og 13. Mail skal defineres ift. eventuel misbrug (undgå blacklisting), dette defineres i linje 11.
 En videreudvikling med GUI (grafisk brugerinterface) kan hentes her: https://github.com/enemydown-dk/OaDoiMiner (dette er udenfor dette workshop, men kan inspirere til at arbejde videre).
 
+<h3>SciDOI.py</h3>
+Scriptet er udviklet med det formål, at udtrække OA data fra Science Direct med input i form af en kommasepareret DOI-liste.
+
+**Kode:**
+```python
+"""
+Extracts OA metadata from Science Direct.
+"""
+
+import urllib.request
+import urllib.error
+import json
+import csv
+
+APIKEY = '64ca3ad5b69086dca1ec2a9b9c8144cb' #indtast din APIkey fra Science Direct her.
+FILE_NAME = 'in.csv' #navn på inputfil her.
+JSON_NAME = 'out.txt' #navn på output fil her.
+
+def pull_data_api(url):
+    """Opslag i Science Direct API"""
+    req = urllib.request.Request(url)
+    try:
+        response = urllib.request.urlopen(req)
+        data = json.loads(response.read())
+        write_json_2_csv(JSON_NAME, data)
+        print(data)
+
+    except urllib.error.HTTPError as _:
+        print(_.reason)
+
+def open_csv():
+    """Læser inputfilen i variablen FILE_NAME"""
+    with open(FILE_NAME, newline='') as _:
+        reader = csv.reader(_, delimiter=';')
+        for row in reader:
+            wos_url = "https://api.elsevier.com/content/article/doi/" \
+            + row[0] + "?apiKey=" + APIKEY + "&httpAccept=application%2Fjson"
+            pull_data_api(wos_url)
+
+def write_json_2_csv(json_name, data):
+    """Skriver datastrøm (json) til outputfilen i variablen JSON_NAME"""
+    with open(json_name, mode="a") as file:
+        file.write(json.dumps(data))
+
+def main():
+    """main"""
+    open_csv()
+
+if __name__ == '__main__':
+    main()
+```
+**Anvendelse:**
+
 <h3>bibtex2csv.py</h3>
 Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
 
@@ -190,56 +243,4 @@ try:
     fundtext = entry["Funding-text"]
 except KeyError:
     fundtext = 'N/A'
-```
-
-<h3>SciDOI.py</h3>
-
-Bla bla
-**Kode:**
-```python
-"""
-Extracts DOI with corresponding author from Science Direct.
-"""
-
-import urllib.request
-import urllib.error
-import json
-import csv
-
-APIKEY = '64ca3ad5b69086dca1ec2a9b9c8144cb' #indtast din APIkey fra Science Direct her.
-FILE_NAME = 'in.csv' #navn på inputfil her.
-JSON_NAME = 'out.txt' #navn på output fil her.
-
-def pull_data_api(url):
-    """Opslag i Science Direct API"""
-    req = urllib.request.Request(url)
-    try:
-        response = urllib.request.urlopen(req)
-        data = json.loads(response.read())
-        write_json_2_csv(JSON_NAME, data)
-        print(data)
-
-    except urllib.error.HTTPError as _:
-        print(_.reason)
-
-def open_csv():
-    """Læser inputfilen i variablen FILE_NAME"""
-    with open(FILE_NAME, newline='') as _:
-        reader = csv.reader(_, delimiter=';')
-        for row in reader:
-            wos_url = "https://api.elsevier.com/content/article/doi/" \
-            + row[0] + "?apiKey=" + APIKEY + "&httpAccept=application%2Fjson"
-            pull_data_api(wos_url)
-
-def write_json_2_csv(json_name, data):
-    """Skriver datastrøm (json) til outputfilen i variablen JSON_NAME"""
-    with open(json_name, mode="a") as file:
-        file.write(json.dumps(data))
-
-def main():
-    """main"""
-    open_csv()
-
-if __name__ == '__main__':
-    main()
 ```
