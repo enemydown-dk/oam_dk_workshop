@@ -92,6 +92,8 @@ if __name__ == '__main__':
 Scriptet accepterer input i form af en kommasepareret tekstfil indeholdende den liste af DOI'er, som vi ønsker at udtrække informationer omkring. Der skal også defineres en output fil. Input og output defineres i scriptets linje 12 og 13. Mail skal defineres ift. eventuel misbrug (undgå blacklisting), dette defineres i linje 11.
 En videreudvikling med GUI (grafisk brugerinterface) kan hentes her: https://github.com/enemydown-dk/OaDoiMiner (dette er udenfor dette workshop, men kan inspirere til at arbejde videre).
 
+***Kør scriptet med følgende kommando: python OADOI.py
+
 <h3>SciDOI.py</h3>
 Scriptet er udviklet med det formål, at udtrække OA data fra Science Direct med input i form af en kommasepareret DOI-liste.
 
@@ -147,6 +149,8 @@ if __name__ == '__main__':
 
 <h3>bibtex2csv.py</h3>
 Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
+
+***Kør scriptet med følgende kommando: python SciDOI.py
 
 
 **Kode:**
@@ -228,8 +232,8 @@ for entry in ENTRIES:
 
 **Anvendelse og tilføjelse af ekstra felter:**
 
-* Konverter en enkelt BibTex fil (.bib) med kommandoen ./bibtex2csv.py < [.bib filnavn] > [output filnavn].
-* Konverter mange BibTex filer (.bib) samtidig med kommandoen cat \*.bib | ./bibtex2csv > [output filnavn] (ikke Windows).
+* Konverter en enkelt BibTex fil (.bib) med kommandoen: python bibtex2csv.py < [.bib filnavn] > [output filnavn].
+* Konverter mange BibTex filer (.bib) samtidig med kommandoen: python cat \*.bib | ./bibtex2csv > [output filnavn] (ikke Windows).
 
 Tilføj ekstra felter som du vil have udtrukket fra Bibtex, ved at tilføje felter til programkoden i denne del:
 ```python
