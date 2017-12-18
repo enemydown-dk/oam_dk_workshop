@@ -108,7 +108,7 @@ import urllib.error
 import json
 import csv
 
-APIKEY = '64ca3ad5b69086dca1ec2a9b9c8144cb' #indtast din APIkey fra Science Direct her.
+APIKEY = '64ca3ad5b69086dca1Ac2a9b9c8166cb' #indtast din APIkey fra Science Direct her (denne er fiktiv).
 FILE_NAME = 'in.csv' #navn på inputfil her.
 JSON_NAME = 'out.txt' #navn på output fil her.
 
@@ -146,12 +146,12 @@ if __name__ == '__main__':
     main()
 ```
 **Anvendelse:**
-
-<h3>bibtex2csv.py</h3>
-Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
+Indsæt din API-kode fra Science Direct, og navngiv input og outputfilerne direkte i scriptet. Disse filer skal være tilstede i samme mappe som scriptet. Den ene fil in.txt (eller hvad du navngiver den til) skal indeholde din kommaseparerede DOI-liste, output.txt skal bare være en tom tekstfil. API-koden til Science Direct kan oprettes her: https://dev.elsevier.com/apikey/manage
 
 ***Kør scriptet med følgende kommando: python SciDOI.py
 
+<h3>bibtex2csv.py</h3>
+Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
 
 **Kode:**
 ```python
