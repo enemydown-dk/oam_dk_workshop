@@ -155,7 +155,7 @@ Indsæt din API-kode fra Science Direct, og navngiv input og outputfilerne direk
 ***Kør scriptet med følgende kommando: python scidoi.py***
 
 <h3>bibtex2csv.py</h3>
-Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil.
+Scriptet er udviklet med det formål, at omsætte metadata udtrukket fra Web of Science (WoS) fra bibtex formatet til csv, som kan importeres direkte i et regneark. Med scriptet kan du udplukke de specifikke felter fra den fra WoS eksporterede bibtexfil. Vi har primært brugt scriptet til at udtrække informationer til brug for identifikation af corresponding author.
 
 Download her: https://github.com/enemydown-dk/oam_dk_workshop/blob/master/filer/bibtex2csv.py
 
