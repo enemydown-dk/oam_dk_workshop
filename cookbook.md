@@ -264,4 +264,9 @@ Vi anbefaler at du benytter programmer OpenRefine (http://openrefine.org/) til a
 <h3>EXCEL (LOPSLAG)</h3>
 Vi har anvendt Microsoft Excel med funktionen LOPSLAG til at samle vores data i et samlet regneark. Der er andre programmer og andre måder at opbevare data på (database). Vi viser dog alligevel her, hvordan du hurtigt kan kombinere data via en nøgle (DOI).
 
+Du lavet et LOPSLAG ved at skrive følgende i formellinjen i Excel: =LOPSLAG(
+
+Hvis du er nybegynder i Excel, kan det være en fordel at trykke på indsæt funktion. Du skal derefter udfylde følgende elementer i vinduet.
+1) Opslagsværdi - dette er den værdi du vil bruge som nøgle i kombineringen af de to regneark (fællesnøglen).
+
 ![LOPSLAG](/filer/LOPSLAG.png)
