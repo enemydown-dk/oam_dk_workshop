@@ -261,4 +261,7 @@ Herunder kommer vi med en række anbefalinger af programmer, som du kan benytte 
 <h3>OpenRefine</h3>
 Vi anbefaler at du benytter programmer OpenRefine (http://openrefine.org/) til at arbejde med oprensning af data. Specielt scriptet oadoi.py er lidt råt i outputformatet, men da OpenRefine kan præsentere den store mængde af json-poster fra scriptet i skønneste orden, er der ikke brugt yderligere ressourcer på dette (det er evt. noget ud selv kan arbejde med).
 
+<h3>EXCEL (LOPSLAG)</h3>
+Vi har anvendt Microsoft Excel med funktionen LOPSLAG til at samle vores data i et samlet regneark. Der er andre programmer og andre måder at opbevare data på (database). Vi viser dog alligevel her, hvordan du hurtigt kan kombinere data via en nøgle (DOI).
 
+![LOPSLAG](/filer/LOPSLAG.png)
