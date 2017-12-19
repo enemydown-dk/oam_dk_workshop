@@ -258,7 +258,7 @@ except KeyError:
 <h2>VIDEREBEARBEJDNING AF DATA</h2>
 Herunder kommer vi med en række anbefalinger af programmer, som du kan benytte til at arbejde videre med din data. Specilt er der fokus på at oprense data og samle dette i et samlet Excel regneark.
 
-<h3>OpenRefine</h3>
+<h3>OPENREFINE</h3>
 Vi anbefaler at du benytter programmer OpenRefine (http://openrefine.org/) til at arbejde med oprensning af data. Specielt scriptet oadoi.py er lidt råt i outputformatet, men da OpenRefine kan præsentere den store mængde af json-poster fra scriptet i skønneste orden, er der ikke brugt yderligere ressourcer på dette (det er evt. noget ud selv kan arbejde med).
 
 <h3>EXCEL (LOPSLAG)</h3>
