@@ -5,7 +5,7 @@ det software, du skal bruge på dagen.
 På dagen er der sat 30 minutter af til installfest. Her installerer og konfigurerer vi Python og Atom i fælleskab.
 Installfest er i tidsrummer 9:00 -> 9:30.
 
-**BEMÆRK!** Hvis du *ikke* er lokaladministrator på din maskine, skal du have installeret programmerne hjemmefra. Primærk fokus skal lægges på Python og Atom. Atom udvidelser kan drille, såfremt man ikke er lokaladministrator - disse kan derfor udelades.
+**BEMÆRK!** Hvis du *ikke* er lokaladministrator på din maskine, skal du have installeret programmerne hjemmefra. Primært fokus skal lægges på Python og Atom. Atom udvidelser kan drille, såfremt man ikke er lokaladministrator - disse kan derfor udelades.
 
 <h2>PYTHON</h2>
 For at kunne køre kode skrevet i Python, skal du have en såkaldt Python fortolker.
@@ -256,10 +256,10 @@ except KeyError:
 ```
 
 <h2>VIDEREBEARBEJDNING AF DATA</h2>
-Herunder kommer vi med en række anbefalinger af programmer, som du kan benytte til at arbejde videre med din data. Specilt er der fokus på at oprense data og samle dette i et samlet Excel regneark.
+Herunder kommer vi med en række anbefalinger af programmer, som du kan benytte til at arbejde videre med din data. Specielt er der fokus på at oprense data og samle dette i et samlet Excel regneark.
 
 <h3>OPENREFINE</h3>
-Vi anbefaler at du benytter programmer OpenRefine (http://openrefine.org/) til at arbejde med oprensning af data. Specielt scriptet oadoi.py er lidt råt i outputformatet, men da OpenRefine kan præsentere den store mængde af json-poster fra scriptet i skønneste orden, er der ikke brugt yderligere ressourcer på dette (det er evt. noget ud selv kan arbejde med).
+Vi anbefaler at du benytter programmer OpenRefine (http://openrefine.org/) til at arbejde med oprensning af data. Specielt scriptet oadoi.py er lidt råt i outputformatet, men da OpenRefine kan præsentere den store mængde af json-poster fra scriptet i skønneste orden, er der ikke brugt yderligere ressourcer på dette (det er evt. noget du selv kan arbejde med).
 
 <h3>EXCEL (LOPSLAG)</h3>
 Vi har anvendt Microsoft Excel med funktionen LOPSLAG til at samle vores data i et samlet regneark. Der er andre programmer og andre måder at opbevare data på (database). Vi viser dog alligevel her, hvordan du hurtigt kan kombinere data via en nøgle (DOI).
@@ -271,7 +271,7 @@ Hvis du er nybegynder i Excel, kan det være en fordel at trykke på indsæt fun
 
 2. Tabelmatrix - dette er det dataområde, du vil gennemsøge for opslagsværdien. Dette er det regneark, som du vil indhente data fra til primærkarket. Det er vigtigt at den værdi du vil søge står i kolonne A.
 
-3. Kolonneindeks_nr - dette er angivelsen af hvilket kolonnenummer i sekundærarket, der indeholder den værdu du er interesseret i at overføre.
+3. Kolonneindeks_nr - dette er angivelsen af hvilket kolonnenummer i sekundærarket, der indeholder den værdi du er interesseret i at overføre.
 
 4. Lig_med - dette er en angivelse af, om Excel såfremt en værdi ikke findes skal forsøge at finde en tilstødende værdi. Dette skal i vores tilfælde være FALSK, da vi ikke ønsker tilnærmelser af DOI, men kun præcise matches.
 
