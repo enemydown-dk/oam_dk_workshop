@@ -9,6 +9,8 @@ Installfest er i tidsrummer 9:00 -> 9:30.
 
 **BEMÆRK OGSÅ!** Du kan med fordel registrere din API-kode til Science Direct på forhånd. Den kan oprettes her: https://dev.elsevier.com/apikey/manage
 
+Hvis du mod forventning ikke har dine egne data med til workshoppen, så har vi uploadet et datasæt med 200 DOI her: https://github.com/enemydown-dk/oam_dk_workshop/blob/master/filer/datas%C3%A6t.csv
+
 <h2>PYTHON</h2>
 For at kunne køre kode skrevet i Python, skal du have en såkaldt Python fortolker.
 Du skal installere den nyeste version af python, som er version 3.6.3. Den kan hentes her: https://www.python.org/downloads/
