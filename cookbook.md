@@ -269,13 +269,13 @@ Der er to metoder til at opbygge denne søgestreng. Du skal erstatte mellemrum e
 Herefter kan duså kopiere din søgning bestående af DOI adskilt af OR ind i en query i WoS (simple search). Prøv første gang med et mindre antal DOI’er for, at tjekke om det virker.
 
 I visningen gemmes restultatet i Bibtex format med funktionen ”Save to Other File Formats” (se billede herunder).
-![WOS1](files/WoS1.jpg)
+![WOS1](filer/WoS1.jpg)
 
 Du skal eksportere som full record metadata til BibTex. Filen kan åbnes i Notepad/Atom eller en anden editor som txt-fil.
-![WoS2](files/WoS2.jpg)
+![WoS2](filer/WoS2.jpg)
 
 I txt-filens metadata eksempelvis "corresponding author" optæde med navn, universitet og institut under: ex. ”Affiliation". Eksempelvis Affiliation = (Bizjak, A (reprint author), Aarhus Univ, Dept. Comp Sci, DK-8000 Aarhus C, Denmark. (Se eksempel herunder).
-![WoS3](files/WoS3.jpg)
+![WoS3](filer/WoS3.jpg)
 
 
 <h2>VIDEREBEARBEJDNING AF DATA</h2>
