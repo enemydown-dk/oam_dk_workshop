@@ -263,9 +263,12 @@ På DOI kan der fra WoS søges på 500 records ad gangen. Men hvordan laver du e
 GUI'en accepterer DOI'er separeret med OR som input: 10.1111/1469-8676.12099 OR 10.1007/978-3-662-46081-8_9 OR 10.1016/j.entcs.2015.12.020 OR […]
 
 Der er to metoder til at opbygge denne søgestreng. Du skal erstatte mellemrum efter hver DOI med et [OR] via en af disse metoder:
-* Commandline (bash): sed 's/$/OR/' DOI_WoS.txt > new-DOI_WoS.txt (OBS: kræver linux)
+* Commandline (bash - kræver Linux/OSX/Unix): sed 's/$/OR/' DOI_WoS.txt > new-DOI_WoS.txt
 * Excel: 1. kolonne med DOI’er; 2. kolonnne med blanktegn_or_blanktegn [ or ] og ctrl+c ind i en ny tekstfil.
 
+Herefter kan duså kopiere din søgning bestående af DOI adskilt af OR ind i en query i WoS (simple search). Prøv første gang med et mindre antal DOI’er for, at tjekke om det virker.
+
+I visningen gemmes restultatet i Bibtex format med funktionen ”Save to Other File Formats”.
 
 
 <h2>VIDEREBEARBEJDNING AF DATA</h2>
