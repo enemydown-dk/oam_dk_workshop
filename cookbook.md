@@ -7,6 +7,8 @@ Installfest er i tidsrummer 9:00 -> 9:30.
 
 **BEMÆRK!** Hvis du *ikke* er lokaladministrator på din maskine, skal du have installeret programmerne hjemmefra. Primærk fokus skal lægges på Python og Atom. Atom udvidelser kan drille, såfremt man ikke er lokaladministrator - disse kan derfor udelades.
 
+**BEMÆRK OGSÅ!*** Du kan med fordel registrere din API-kode til Science Direct på forhånd. Den kan oprettes her: https://dev.elsevier.com/apikey/manage
+
 <h2>PYTHON</h2>
 For at kunne køre kode skrevet i Python, skal du have en såkaldt Python fortolker.
 Du skal installere den nyeste version af python, som er version 3.6.3. Den kan hentes her: https://www.python.org/downloads/
