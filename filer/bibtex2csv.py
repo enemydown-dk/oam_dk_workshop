@@ -20,13 +20,13 @@ for line in stdin:
     if match('^@', line.strip()):
         if ENTRY != {}:
             ENTRIES.append(ENTRY)
-            entry = {}
+            ENTRY = {}
     elif match('url', line.strip()):
         value, = findall("\\s+", line)
-        entry["url"] = value
+        ENTRY["url"] = value
     elif search('=', line.strip()):
         key, value = [v.strip(" {},\n") for v in line.split("=", 1)]
-        entry[key] = value
+        ENTRY[key] = value
 
 #Listen ENTREES løbes igennem, alle værdier udskrives. Hvis elementet er tomt
 #udskrives N/A (not avalible) på den tomme plads.
