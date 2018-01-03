@@ -60,11 +60,11 @@ for entry in ENTRIES:
     except KeyError:
         publisher = 'N/A'
     try:
-        funding = entry["Funding-acknowledgement"]
+        funding = entry["Funding-Acknowledgement"]
     except KeyError:
         funding = 'N/A'
     try:
-        fundtext = entry["Funding-text"]
+        fundtext = entry["Funding-Text"]
     except KeyError:
         fundtext = 'N/A'
 
