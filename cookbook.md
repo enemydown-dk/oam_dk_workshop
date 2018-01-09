@@ -15,8 +15,8 @@ Hvis du mod forventning ikke har dine egne data med til workshoppen, så har vi 
 For at kunne køre kode skrevet i Python, skal du have en såkaldt Python fortolker.
 Du skal installere den nyeste version af python, som er version 3.6.3. Den kan hentes her: https://www.python.org/downloads/
 Det er vigtigt at du kører nyeste version, da scripts er opdateret til denne udgave.
-Følg den installations guide, der kommer med programmet. Du skal lave en standard installation,
-men huske at sætte flueben ved: add python to path (se billede herunder). 
+Følg den installations guide, der kommer med programmet.
+Du skal lave en standard installation, men huske at sætte flueben ved: add python to path (se billede herunder). 
 
 ![PYTHON](filer/Python_setup.png)
 
