@@ -18,7 +18,7 @@ Det er vigtigt at du kører nyeste version, da scripts er opdateret til denne ud
 Følg den installations guide, der kommer med programmet. Du skal lave en standard installation,
 men huske at sætte flueben ved: **add python to path** (se billede herunder).
 
-![PYTHON](filer/Python setup.png)
+![PYTHON](filer/Python_setup.png)
 
 <h2>ATOM</h2>
 For at skrive python skal du også bruge en text editor, vi anbefaler at bruge Atom det er en
