@@ -19,6 +19,7 @@ Følg den installations guide, der kommer med programmet. Du skal lave en standa
 men huske at sætte flueben ved: **add python to path** (se billede herunder).
 
 
+
 ![PYTHON](filer/Python_setup.png)
 
 <h2>ATOM</h2>
