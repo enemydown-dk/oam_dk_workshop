@@ -1,3 +1,10 @@
+**POST WORKSHOP TILFØJELSER**
+Enkelte udtrykte ønske om at få del i scriptet til at udtrække informationer fra api.altmetric.com. Dette script er nu tilføjet til workshoppens filarkiv. Du skal skrive til supporten hos altmetric.com for at få en valid key! Scriptet eksekveres ligesom oadoi.py
+Download her: https://github.com/enemydown-dk/oam_dk_workshop/blob/master/filer/altdoi.py
+
+Tak for en god workshop!
+/Asger
+
 Til workshoppen den 23. januar 2018, skal du arbejde med programmeringssproget Python.
 For at du kan komme godt fra start på dagen, bedes du læse denne guide igennem og installere
 det software, du skal bruge på dagen.
