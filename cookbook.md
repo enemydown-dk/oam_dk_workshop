@@ -33,10 +33,8 @@ For at skrive python skal du også bruge en text editor, vi anbefaler at bruge A
 gratis open source editor lavet af folkene bag GitHub. Atom kan hentes i sin nyeste version her: https://atom.io/
 
 <h2>ATOM UDVIDELSER</h2>
-Atom har en række udvidelser der gør det nemmere at skrive i python, hvis du i
-menulinjen trykker på Atom -> "Install shell commands", kan du gøre det
-væsenligt nemmere at installere disse udvidelser.
-Efter man har gjort dette, kan du åbne terminal på macOS og Linux, eller kommandoprompten
+Atom har en række udvidelser der gør det nemmere at skrive i Python.
+Disse installeres ved at åbne terminal på macOS og Linux, eller kommandoprompten
 på Windows (cmd) og indtaste disse kommandoer (copy and paste):
 
 * apm install autocomplete-python
