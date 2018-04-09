@@ -29,11 +29,11 @@ Følg den installations guide, der kommer med programmet. Du skal lave en standa
 ![PYTHON](filer/Python_setup.png)
 
 <h2>ATOM</h2>
-For at skrive python skal du også bruge en text editor, vi anbefaler at bruge Atom det er en
+For at skrive Python skal du også bruge en text editor, vi anbefaler at bruge Atom det er en
 gratis open source editor lavet af folkene bag GitHub. Atom kan hentes i sin nyeste version her: https://atom.io/
 
 <h2>ATOM UDVIDELSER</h2>
-Atom har en række udvidelser der gør det nemmere at skrive i Python.
+Atom har en række udvidelser, der gør det nemmere at skrive i Python.
 Disse installeres ved at åbne terminal på macOS og Linux, eller kommandoprompten
 på Windows (cmd) og indtaste disse kommandoer (copy and paste):
 
